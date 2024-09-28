@@ -1,0 +1,20 @@
+#simple quiz game:
+questions=[
+    ("What is the capital of Pakistan? ","Islamabad"),
+    ("Whatis 5 + 10-2? ","13"),
+    ("What is the colour of sky? ","Blue"),
+    ("Name any block coding platform ","Scratch"),
+    ("Which is the tallest animal in the world? ","Giraffe")
+    ]
+score=0 
+index=0 
+while index < len(questions):
+    question, answer=questions[index]
+    user_answer=input(f"{question}")
+    if user_answer.lower()==answer.lower():
+        print("Correct!")
+        score+=1 
+    else:
+        print(f"Incorrect.The correct answer is {answer}.")
+    index+=1 
+print(f"Your scored {score} out of {len(questions)}.")
