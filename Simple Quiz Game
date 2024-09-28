@@ -5,7 +5,7 @@ questions=[
     ("What is the colour of sky? ","Blue"),
     ("Name any block coding platform ","Scratch"),
     ("Which is the tallest animal in the world? ","Giraffe")
-    ]
+    ]     
 score=0 
 index=0 
 while index < len(questions):
